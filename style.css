@@ -1,0 +1,138 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header section */
+header {
+    background-color:#000000;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo_div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav_list {
+    display: flex;
+    gap: 2rem;
+}
+
+/* hero section */
+.hero {
+    background-color: #dadbf1;
+    color: #000000;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero_header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #4C5FD5;
+    border-radius: 5px;
+
+    background-image: url(images/right-arrow-alt-regular-24.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    /* filter: brightness(0) saturate(100%) invert(91%) sepia(2%) saturate(2104%) hue-rotate(200deg) brightness(96%) contrast(97%); */
+}
+
+
+/* services section */
+
+.services {
+    padding: 1rem 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    width: 80%;
+}
+
+.content-item img {
+    width: 15%;
+    align-self: start;
+} 
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.content-text a{
+    text-decoration: none;
+    color: #4C5FD5;
+}
+
+
+/* footer styling */
+
+footer {
+    padding: 1rem 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer li, a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact {
+    grid-column: 2 / 3;
+    margin-top: -3rem;
+}
+
+.footer_bottom {
+    margin: 2rem 0;
+}
