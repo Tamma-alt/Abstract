@@ -46,6 +46,10 @@ header {
     gap: 2rem;
 }
 
+.logo_div span h3 {
+    font-weight: lighter;
+}
+
 /* hero section */
 .hero {
     background-color: #dadbf1;
@@ -102,6 +106,10 @@ input {
     gap: .5rem;
 }
 
+.content-text p {
+    font-size: 1.2rem;
+}
+
 .content-text a{
     text-decoration: none;
     color: #4C5FD5;
@@ -135,4 +143,52 @@ footer li, a {
 
 .footer_bottom {
     margin: 2rem 0;
+    display: flex;
+}
+/* desktop */
+
+@media (min-width: 700px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero_header {
+        font-size: 3rem;
+    }
+
+    input {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-item {
+       width: 70%;
+    }
+
+    .footer_content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: .5rem;
+        row-gap: 2rem;
+        width: 60%;
+    }
+
+    .contact {
+        grid-column: 4;
+    }
+
+    .footer_bottom {
+        margin: 0 auto;
+    }
+
+    .footer_bottom-item {
+        width: 100%;
+        margin: 0 0 0 50rem;
+    }
 }
